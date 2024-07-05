@@ -1,0 +1,87 @@
+.display {
+  max-width: 216px;
+  max-height: 216px;
+  padding: 0 20px;
+  position: relative;
+
+  @media (max-width: 575px) {
+    margin-bottom: 10px;
+  }
+ 
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    &:hover {
+      .media {
+        transition: all 0.4s ease;
+        opacity: 0.9;
+      }
+
+      .magnifier {
+        transition: scale 0.4s ease;
+        scale: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .videoWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .videoSmall {
+    width: 80px;
+    height: 80px;
+  }
+
+  .media {
+    transition: all 0.4s ease;
+    margin: 0 auto;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .smallSize {
+    width: 80px;
+    height: 80px;
+  }
+
+  .buttonContainder {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+  }
+  
+  .buttonContainderSingl {
+    justify-content: center;
+  }
+}
+.buttonAction {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666666;
+  font-style: normal;
+  line-height: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.smallSize {
+  width: 92px;
+  height: 118px;
+  padding: 0px;
+}
