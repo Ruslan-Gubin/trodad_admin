@@ -2,6 +2,6 @@ import axios from "axios";
 import { isDev } from './constants';
 
 export const api = axios.create({
-  baseURL: isDev ? 'http://localhost:8080/api' : 'http://localhost:8080/api',
+  baseURL: isDev ? 'https://trodat-back.onrender.com/api' : 'https://trodat-back.onrender.com/api',
   responseType: 'json'
 });
